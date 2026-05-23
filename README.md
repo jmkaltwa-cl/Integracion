@@ -41,7 +41,3 @@ Abrir en el navegador: **http://localhost:5173**
 - Frontend: React, Vite, Axios, React Router, Tailwind
 - Backend: Express, Mongoose, CORS
 - Base de datos: MongoDB
-
-## Video de demostración
-
-_(Opcional: enlace a video de 5 min mostrando crear, editar y eliminar desde la web)_

@@ -22,7 +22,15 @@ function RegistroTarj({ registro }) {
       <div className="mt-3 flex flex-wrap gap-2">
         <button
           type="button"
-          onClick={() => deleteRegistro(registro._id)}
+          onClick={() => {
+            if (
+              window.confirm(
+                `¿Eliminar la inscripción de ${registro.nombre}? Esta acción no se puede deshacer.`
+              )
+            ) {
+              deleteRegistro(registro._id);
+            }
+          }}
           className="cursor-pointer rounded-[10px] border-0 bg-[#7a1414] px-3 py-2 text-sm font-bold text-white"
         >
           Eliminar

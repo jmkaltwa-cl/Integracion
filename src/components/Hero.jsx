@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoUnab from "../assets/logo-unab.png";
 
 function scrollToSection(id) {
@@ -57,10 +58,16 @@ function Hero() {
           <button
             type="button"
             onClick={() => scrollToSection("inscripcion")}
-            className="inline-block cursor-pointer rounded-md border-0 bg-transparent px-2 py-1.5 text-white transition hover:bg-white/10"
+            className="mr-3 inline-block cursor-pointer rounded-md border-0 bg-transparent px-2 py-1.5 text-white transition hover:bg-white/10"
           >
             Inscripción
           </button>
+          <Link
+            to="/registros"
+            className="inline-block rounded-md px-2 py-1.5 text-white no-underline transition hover:bg-white/10"
+          >
+            Ver inscripciones
+          </Link>
         </nav>
       </div>
     </header>

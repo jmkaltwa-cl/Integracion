@@ -27,7 +27,7 @@ function RegistroListPage() {
 
       <main className="mx-auto w-full max-w-[980px] px-4 py-6">
         <section className="rounded-xl border border-[#e6eaf2] bg-white p-4">
-          <h2 className="mb-4 text-xl font-bold">Listado CRUD</h2>
+          <h2 className="mb-4 text-xl font-bold">Todas las inscripciones</h2>
 
           {!registros || registros.length === 0 ? (
             <p className="text-[#3a4357]">No hay inscripciones disponibles.</p>
